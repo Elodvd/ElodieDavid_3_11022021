@@ -1,0 +1,14 @@
+
+/* Bouton violet*/
+@mixin btn-violet{
+    color:#FFFFFF;
+    background-color:$primaire;
+    border:solid 1px $primair;
+    border-radius:20px;
+
+}
+/* Bordure arrondie*/
+@mixin border{
+    border:solid 1px black;
+    border-radius: 10px;
+}
