@@ -5,12 +5,10 @@
     <title> Oh My Food </title>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -30,17 +28,25 @@
     <section>
         <h1>Réservez le menu qui vous convient</h1> 
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <a href="#" class="btn-explorer"> Explorer nos restaurants </a>
+        <div><a href="#" id="btn-explorer"> Explorer nos restaurants </a></div>
     </section>
 
     <article>
         <h2>Fonctionnement</h2>
-        <div>
-            <ul>
-                <li>Choisissez un restaurant</li>
-                <li>Composez votre menu</li>
-                <li>Dégustez au restaurant</li>
-            </ul>
+        <div id="bloc_etapes">
+                <div class="etape">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="etape">
+                    <i class="fas fa-list-ul"></i> 
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="etape">
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            
         </div>
     </article>
 
@@ -83,21 +89,21 @@
 
 
     <footer>
-        <div id="logo_footer">
-			<img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
-        </div>
-        <nav>
-            <div class="footer_logo_txt"> 
-                <span><i class="fas fa-utensils" class="icone_footer"></i></span>
-                <span><a href=""><p>Proposer un restaurant</p></a></span>
+        <div id="bloc_footer">
+            <div>
+                <img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" id="logo_footer">
             </div>
             <div class="footer_logo_txt"> 
-                <span><i class="fas fa-hands-helping" class="icone_footer"></i></span>
-                <span><a href=""><p>Devenir partenaire</p></a></span>
+                    <i class="fas fa-utensils"></i>
+                    <a href="">Proposer un restaurant</a>
+            </div>
+            <div class="footer_logo_txt"> 
+                    <i class="fas fa-hands-helping" ></i>
+                    <a href=""><p>Devenir partenaire</p></a>
             </div>
             <div><a href="">Mentions légales</a></div>
-            <div><a href="">Contacts</a></div>
-        </nav>
+            <div><a href="">Contact</a></div>
+        </div>
     </footer>
 
 

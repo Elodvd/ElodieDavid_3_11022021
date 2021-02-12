@@ -1,14 +1,12 @@
-/* Variables*/
 /* Couleurs*/
-/* Mixin*/
 /* Bouton violet*/
 /* Bordure arrondie*/
 h1, h2, h3 {
-  font-family: 'Schrikhand', 'Arial', sans-serif;
+  font-family: "Schrikhand", "Arial", sans-serif;
 }
 
 p, a {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 a {
@@ -16,30 +14,72 @@ a {
   color: black;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 #logo_accueil {
   width: 130px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
 }
 
 #localisation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: solid 1px #e4e1e1f3;
-  background-color: #e4e1e1f3;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #f3f3f3;
+  background-color: #e6e6e6;
+}
+
+header i {
+  margin-right: 20px;
+}
+
+section {
+  border: solid 1px #f3f3f3;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 250px;
 }
 
 #btn-explorer {
   color: #FFFFFF;
-  background-color: #9356DC;
+  background: linear-gradient(to bottom, #FF79DA, 40%, #9356DC);
+  border: solid 1px #9356DC;
   border-radius: 20px;
+  display: block;
+  margin: auto;
   width: 200px;
   height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bloc_etapes {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.etape {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+
+article i {
+  margin-left: 30px;
+  margin-right: 20px;
 }
 
 .bloc-restaurant {
@@ -73,4 +113,37 @@ a {
 #delice-sens {
   background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
+
+footer {
+  width: 100%;
+  border: solid 1px #f3f3f3;
+  background-color: #272727;
+  color: white;
+}
+
+#bloc_footer {
+  padding: 20px;
+}
+
+#logo_footer {
+  filter: invert(100%);
+  width: 120px;
+}
+
+.footer_logo_txt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  font-family: "Roboto", "Arial", sans-serif;
+  text-decoration: none;
+}
+
+footer i {
+  margin-right: 20px;
+}
+
 /*# sourceMappingURL=styles.css.map */

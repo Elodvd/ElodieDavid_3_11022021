@@ -17,12 +17,14 @@ a{
 header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 
 #logo_accueil{
 width: 130px;
+display: block;
+margin:auto;
+margin-bottom: 5px;
+
 }
 
 #localisation{
@@ -30,11 +32,18 @@ width: 130px;
     justify-content: center;
     align-items: center;
     border: solid 1px $background-grey;
-    background-color: darken($background-grey, 20);
+    background-color: darken($background-grey, 5)
+}
+header i{
+    margin-right: 20px;
 }
 section{
     border: solid 1px $background-grey;
     background-color: $background-grey ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height:250px;
 }
 
 #btn-explorer{
@@ -44,6 +53,24 @@ section{
     display: flex;
 	justify-content: center;
   	align-items: center;
+}
+#bloc_etapes{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.etape{
+    width: 90%;
+    display: flex;
+    margin:auto;
+    align-items: center;
+    background-color: $background-grey;
+    border-radius: 20px;
+}
+article i{
+    margin-left:30px;
+    margin-right: 20px;
 }
 
 .bloc-restaurant{
@@ -75,17 +102,28 @@ section{
 #delice-sens{
     background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
-
 footer{
     width: 100%;
     border: solid 1px $background-grey;
-    background-color: $background-grey ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: darken($background-grey, 80) ;
+    color:$txt-footer;
+}
+#bloc_footer{
+    padding:20px;
+}
+#logo_footer{
+    filter:invert(100%);
+    width: 120px;;
 }
 
 .footer_logo_txt{
-    display: inline;
+    display: flex;
     flex-direction: row;
+    align-items:center ;
+}
+footer a{
+    @include txt-footer;
+}
+footer i{
+    margin-right: 20px;
 }

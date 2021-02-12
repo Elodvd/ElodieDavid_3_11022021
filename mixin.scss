@@ -2,13 +2,21 @@
 /* Bouton violet*/
 @mixin btn-violet{
     color:#FFFFFF;
-    background-color:$primaire;
-    border:solid 1px $primair;
+    background:linear-gradient(to bottom,$secondaire,40%, $primaire);
+    border:solid 1px $primaire;
     border-radius:20px;
+    display: block;
+    margin:auto;
 
 }
 /* Bordure arrondie*/
 @mixin border{
     border:solid 1px black;
     border-radius: 10px;
+}
+
+@mixin txt-footer{
+    color:white;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    text-decoration:none;
 }
