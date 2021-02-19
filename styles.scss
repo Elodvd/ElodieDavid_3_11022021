@@ -1,10 +1,21 @@
 @import "./variables.scss";
 @import "./mixin.scss" ;
 
-
-
+*
+{
+    font-weight: lighter;
+}
 h1, h2, h3{
-    font-family:'Schrikhand', 'Arial', sans-serif;
+    font-family:'Roboto', 'Arial', sans-serif;
+    font-weight: bold;
+}
+h2{
+    padding-left: 27px;
+    font-size: 24px;
+}
+h4{
+    font-family: 'Roboto';
+    font-size: 16px;
 }
 p,a{
     font-family:'Roboto', 'Arial', sans-serif;
@@ -67,16 +78,46 @@ section{
     align-items: center;
     background-color: $background-grey;
     border-radius: 20px;
+    box-shadow: 2px 2px 2px #d1cccc;
+    position:relative;
+}
+.btn-numero{
+    background-color: $primaire;
+    color:white;
+    border-radius:30px;
+    border:solid 1px $primaire;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    position:absolute;  
+    left: -7px;
 }
 article i{
     margin-left:30px;
     margin-right: 20px;
 }
 
+nav{
+    background-color: $background-grey;
+    height:950px;
+    margin-top:40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#column-blocs-restaurant{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+height:880px;
+}
+
 .bloc-restaurant{
     @include border;
-    width:250px;
-    ;
+    width:300px;
+    background-color: white;
+    box-shadow: 2px 2px 2px #d1cccc;
+    position: relative;
 }
 
 .photos-restaurants-accueil{
@@ -84,10 +125,32 @@ article i{
     background-position: bottom;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    width:250px;
+    width:300px;
     height:130px;
 }
+.nouveau{
+    background-color: $tertiaire;
+    color:darken($color: $tertiaire, $amount:40);
+    font-weight: bold;
+    padding:8px;
+    border-radius: 3px;
+    position:absolute;
+    z-index: 2;
+    top:-5px;
+    left:210px;
+}
+.nom_lieu_restaurant{
+    margin-left:15px;
+    line-height: 8px;
+    position: relative;
+}
 
+.heart{
+ position: absolute;
+ bottom:10px;
+ left:230px;
+ font-size:1.5em;
+}
 #palette-du-gout{
     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
@@ -107,23 +170,21 @@ footer{
     border: solid 1px $background-grey;
     background-color: darken($background-grey, 80) ;
     color:$txt-footer;
-}
-#bloc_footer{
     padding:20px;
-}
-#logo_footer{
-    filter:invert(100%);
-    width: 120px;;
+    height: 150px;
+    line-height: 10px;
 }
 
-.footer_logo_txt{
-    display: flex;
-    flex-direction: row;
-    align-items:center ;
+#logo_footer{
+    filter:invert(100%);
+    width: 100px;
+    margin-bottom: 8px;
 }
+
 footer a{
     @include txt-footer;
 }
 footer i{
-    margin-right: 20px;
+    margin-right: 10px;
+    font-style: 0,8em;
 }

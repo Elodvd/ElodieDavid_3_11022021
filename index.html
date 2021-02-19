@@ -5,8 +5,8 @@
     <title> Oh My Food </title>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
-    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
 	integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -34,15 +34,19 @@
     <article>
         <h2>Fonctionnement</h2>
         <div id="bloc_etapes">
+                
                 <div class="etape">
+                    <p class="btn-numero">1</p>
                     <i class="fas fa-mobile-alt"></i>
                     <p>Choisissez un restaurant</p>
                 </div>
                 <div class="etape">
+                    <p class="btn-numero">2</p>
                     <i class="fas fa-list-ul"></i> 
                     <p>Composez votre menu</p>
                 </div>
                 <div class="etape">
+                    <p class="btn-numero">3</p>
                     <i class="fas fa-store"></i>
                     <p>Dégustez au restaurant</p>
                 </div>
@@ -51,61 +55,75 @@
     </article>
 
     <nav>
-
-    </nav>
         <h2>Restaurants</h2>
-        
-        <div class="bloc-restaurant">
-            <a href="palette_du_gout.html">
-                <div class="photos-restaurants-accueil" id="palette-du-gout"></div>
-                <h3>La palette du goût</h3>
-                <h4>Ménilmontant</h4>
-            </a>
+        <div id="column-blocs-restaurant">
+            <div class="bloc-restaurant">
+                <a href="palette_du_gout.html">
+                    <div class="photos-restaurants-accueil" id="palette-du-gout"></div>
+                    <p class="nouveau">Nouveau</p>
+                    <div class="nom_lieu_restaurant">
+                            <h3>La palette du goût</h3>
+                            <h4>Ménilmontant</h4>
+                    <div class="heart"><i class="far fa-heart"></i></div>
+                </div>
+                </a>
+            </div>
+            <div class="bloc-restaurant">
+                <a href="la_note_enchantee.html">
+                    <div class="photos-restaurants-accueil" id="note-enchantee"></div>
+                    <p class="nouveau">Nouveau</p>
+                    <div class="nom_lieu_restaurant">
+                        <h3>La note enchantée</h3>
+                        <h4>Charonne</h4>
+                        <div class="heart"><i class="far fa-heart"></i></div>
+                    </div>     
+                </a>
+            </div>
+            <div class="bloc-restaurant">
+                <a href="a_la_française.html">
+                        <div class="photos-restaurants-accueil" id="a-la-francaise"></div>
+                        <div class="nom_lieu_restaurant">
+                                <h3>A la francaise</h3>
+                                <h4>Cité Rouge</h4>
+                                <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                </a>
+            </div>
+            <div class="bloc-restaurant">
+                <a href ="delice_des_sens.html">
+                        <div class="photos-restaurants-accueil" id="delice-sens"></div>
+                        <div class="nom_lieu_restaurant">
+                            <h3>Le délice des sens</h3>
+                            <h4>Folie-Méricourt</h4>
+                            <div class="heart"><i class="far fa-heart"></i></div>
+                        </div>
+                    </a>
+            </div>
         </div>
-        <div class="bloc-restaurant">
-            <a href="la_note_enchantee.html">
-                <div class="photos-restaurants-accueil" id="note-enchantee"></div>
-                <h3>La note enchantée</h3>
-                <h4>Charonne</h4>
-        </a>
-       </div>
-       <div class="bloc-restaurant">
-           <a href="a_la_française.html">
-                <div class="photos-restaurants-accueil" id="a-la-francaise"></div>
-                <h3>A la francaise</h3>
-                <h4>Cité Rouge</h4>
-            </a>
-       </div>
-       <div class="bloc-restaurant">
-           <a href ="delice_des_sens.html">
-                <div class="photos-restaurants-accueil" id="delice-sens"></div>
-                <h3>Le délice des sens</h3>
-                <h4>Folie-Méricourt</h4>
-            </a>
-       </div>
-   </div>
+    </nav>
 
 
 
 
     <footer>
-        <div id="bloc_footer">
             <div>
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" id="logo_footer">
             </div>
-            <div class="footer_logo_txt"> 
-                    <i class="fas fa-utensils"></i>
-                    <a href="">Proposer un restaurant</a>
+            <div class="footer-link">
+                <a href="#">
+                    <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+                </a>
+                <a href="#" title="Rejoignez-nous">
+                    <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+                </a>
+                <a href="#">
+                    <p>Mentions légales</p>
+                </a>
+                <a href="mailto:contact@ohmyfood.com" title="Contactez-nous">
+                    <p>Contact</p>
+                </a>
             </div>
-            <div class="footer_logo_txt"> 
-                    <i class="fas fa-hands-helping" ></i>
-                    <a href=""><p>Devenir partenaire</p></a>
-            </div>
-            <div><a href="">Mentions légales</a></div>
-            <div><a href="">Contact</a></div>
-        </div>
-    </footer>
-
+        </footer>
 
 </body>
 
