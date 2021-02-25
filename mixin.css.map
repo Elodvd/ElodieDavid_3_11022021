@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,kBAAkB;AAUlB,qBAAqB",
+    "mappings": "AACA,kBAAkB;AAclB,qBAAqB",
     "sources": [
         "mixin.scss"
     ],

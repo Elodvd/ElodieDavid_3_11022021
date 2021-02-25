@@ -1,0 +1,16 @@
+/*Background + sombre pendant loading-spinner*/
+
+@keyframes bg-loading-spinner {
+    0% {
+        z-index: 4;
+        opacity: 1;
+    }
+    99% {
+        z-index: 4;
+        opacity: 1;
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }
+}

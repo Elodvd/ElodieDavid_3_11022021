@@ -3,12 +3,16 @@
 @mixin btn-violet{
     color:#FFFFFF;
     background:linear-gradient(to bottom,$secondaire,40%, $primaire);
-    border:solid 1px $primaire;
     border-radius:20px;
+    box-shadow: 1px 1px 2px $primaire-clair;
     display: block;
     margin:auto;
-
 }
+@mixin btn-violet-survol{
+        background:linear-gradient(to bottom,$secondaire-clair,40%, $primaire-clair);
+        box-shadow: 5px 5px 2px $primaire-clair;
+    }
+
 /* Bordure arrondie*/
 @mixin border{
     border-radius: 10px;
@@ -18,4 +22,8 @@
     color:white;
     font-family: 'Roboto', 'Arial', sans-serif;
     text-decoration:none;
+}
+@mixin hover_ombre{
+    background: lighten($primaire,40%);
+    box-shadow:8px 8px 0px $background-grey;
 }

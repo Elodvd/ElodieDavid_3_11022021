@@ -32,6 +32,41 @@ a{
     text-decoration: none;
     color:black;
 }
+/*loading spinner*/
+.container-spinner{
+    &.bar-spinner{
+        width: 100px;
+        height: 25px;
+        border:1px solid $primaire;
+        margin:100px auto;
+        border-radius: 6px;
+        position:relative;
+        background: white;
+        z-index: 1001;
+            &.sphere-spinner{
+                display: block;
+                height: 100%;
+                width: 24%;
+                background-color: $primaire;
+                border-radius: 50%;
+                animation:slide 2s infinite ease-in-out alternate;
+            }
+        }
+    &.bar-spinner::after{
+        content:"Oh my food...";
+        font-family: "Shrikhand";
+        color:$primaire;
+        z-index:1002;
+        position: absolute;
+        left: 25%;
+        top:150%;
+        } 
+}
+@keyframes slide{
+    to {margin-left:90%;}
+}
+
+
 /*page accueil*/
 
 header{
@@ -73,7 +108,12 @@ section{
     display: flex;
 	justify-content: center;
   	align-items: center;
+        &:hover{
+            @include btn-violet-survol;
+        }
 }
+
+
 #bloc_etapes{
     height: 200px;
     display: flex;
@@ -160,6 +200,12 @@ height:880px;
  left:230px;
  font-size:1.5em;
 }
+/*ne fonctionne pas 
+.fa-heart:hover{
+        animation: remplissage-coeur 500ms forwards;
+        transform-origin: bottom center;
+}
+*/
 #palette-du-gout{
     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
@@ -289,6 +335,9 @@ main span{
 	justify-content: center;
   	align-items: center;
     margin-top: 30px;
+    &:hover{
+        @include btn-violet-survol;
+    }
 }
 
 /*VERSION TABLETTE*/
@@ -381,12 +430,6 @@ section{
     padding:20px;
     margin:none;
 }
-
-.btn-explorer{
-    display: none;
-}
- 
-
 #bloc_etapes{
     height: 70px;
     width: 80%;
