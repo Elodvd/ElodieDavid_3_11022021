@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 /*Background + sombre pendant loading-spinner*/
 
 @keyframes bg-loading-spinner {
@@ -12,5 +14,16 @@
     100% {
         z-index: -1;
         opacity: 0;
+    }
+}
+
+/*remplissage coeur*/
+@keyframes remplissage-coeur {
+    0% {
+        transform:scale(0);
+     }
+    
+    100% {
+        transform:scale(1);
     }
 }

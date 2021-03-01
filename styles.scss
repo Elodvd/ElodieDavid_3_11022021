@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./mixin.scss" ;
+@import "./keyframes.scss";
 
 *
 {
@@ -42,26 +43,28 @@ a{
         border-radius: 6px;
         position:relative;
         background: white;
-        z-index: 1001;
+        z-index: 5;
+        animation:loading 3s forwards;
             &.sphere-spinner{
                 display: block;
                 height: 100%;
                 width: 24%;
                 background-color: $primaire;
                 border-radius: 50%;
-                animation:slide 2s infinite ease-in-out alternate;
+                animation:slide 3000ms infinite ease-in-out alternate;
             }
         }
     &.bar-spinner::after{
         content:"Oh my food...";
         font-family: "Shrikhand";
         color:$primaire;
-        z-index:1002;
+        z-index:6;
         position: absolute;
         left: 25%;
         top:150%;
         } 
 }
+
 @keyframes slide{
     to {margin-left:90%;}
 }
@@ -188,24 +191,41 @@ height:880px;
     top:-5px;
     left:210px;
 }
+.nom_lieu_coeur{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .nom_lieu_restaurant{
     margin-left:15px;
     line-height: 8px;
-    position: relative;
+    position : relative;
+}
+.heart-empty-accueil{
+    font-size:1.5em;
+    position: absolute;
+    right: 50px;
+    bottom:25px;
+}
+.heart-full-accueil{
+    font-size:1.5em;
+    position: absolute;
+    right: 50px;
+    bottom:25px;
+    opacity: 0;
+    &:hover{
+        animation: remplissage-coeur 2s forwards;
+        transform-origin: bottom center;
+        opacity: 1;
+        z-index: 1000;
+        background:linear-gradient(to left,$primaire,$secondaire);
+        background: -webkit-linear-gradient(to left,$primaire,$secondaire);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       
+    }
 }
 
-.heart-accueil{
- position: absolute;
- bottom:10px;
- left:230px;
- font-size:1.5em;
-}
-/*ne fonctionne pas 
-.fa-heart:hover{
-        animation: remplissage-coeur 500ms forwards;
-        transform-origin: bottom center;
-}
-*/
 #palette-du-gout{
     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
