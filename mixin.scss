@@ -6,6 +6,7 @@
     border-radius:20px;
     box-shadow: 1px 1px 2px $primaire-clair;
     display: block;
+    padding:7px;
     margin:auto;
 }
 @mixin btn-violet-survol{
@@ -26,4 +27,10 @@
 @mixin hover_ombre{
     background: lighten($primaire,40%);
     box-shadow:8px 8px 0px $background-grey;
+}
+
+/* césure txt avec ...*/
+@mixin cut-txt{
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
