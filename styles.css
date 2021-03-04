@@ -454,20 +454,6 @@ main {
   width: 60%;
 }
 
-.bloc-menu :hover .check {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.bloc-menu :hover .check i {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-}
-
 .bloc-menu .bloc-entree-4 {
   margin-left: 20px;
   margin-right: 10px;
@@ -525,16 +511,6 @@ main {
 
 .bloc-menu .detail-plat-prix {
   width: 10%;
-}
-
-.bloc-menu .check {
-  width: 20%;
-  background-color: #99E2D0;
-}
-
-.far fa-check-circle {
-  color: #99E2D0;
-  background-color: #99E2D0;
 }
 
 .btn-commander {
