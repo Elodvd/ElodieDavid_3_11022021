@@ -34,6 +34,7 @@ a{
 body{
     margin:0;
 }
+
 /*page accueil*/
 
 
@@ -201,7 +202,7 @@ height:880px;
 }
 footer{
     border: solid 1px $background-grey;
-    background-color: darken($background-grey, 80) ;
+    background-color: darken($background-grey, 80);
     color:$txt-footer;
     padding:20px;
     height: 150px;
@@ -265,8 +266,6 @@ main{
 .bloc-menu{
     margin-left:10px;
     margin-right: 10px;
-    display: flex;
-    justify-content: space-around;
 }
 .bloc-entree-4{
     margin-left:20px;
@@ -297,7 +296,7 @@ main{
             width: 20%;
         }
     }
-
+}
 .detail-plat-nom{
     @include cut-txt;
     white-space: nowrap;
@@ -353,7 +352,7 @@ main{
         flex-direction: row;
         justify-content: space-around;
         height:480px;
-        }
+    }
     footer{
         height: 100px;
     }
@@ -417,7 +416,7 @@ main{
         flex-direction: row;
         align-content: space-between;
         height:700px;
-    width: 100%; 
+        width: 100%; 
     }
     .bloc-restaurant{
         width:450px;
@@ -431,7 +430,7 @@ main{
         left:350px;
     }
     .heart-accueil{
-    left:380px;
+        left:380px;
     }
     footer{
         height: 100px;
@@ -458,10 +457,17 @@ main{
         font-size: 1.5em;
         margin-left:30px;
     }
+    .container-menu{
+        display: flex;
+        flex-direction: row;
+    }
     .bloc-menu{
         width: 32%;
         border-radius: 20px;
         padding:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .bloc-entree-4{
         height:300px;
