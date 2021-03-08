@@ -1,5 +1,72 @@
 /* Couleurs*/
-/*Background + sombre pendant loading-spinner*/
+/*Background pendant loading-spinner*/
+@-webkit-keyframes bg-loading-spinner {
+  0% {
+    background-color: white;
+    z-index: 3;
+  }
+  98% {
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 3;
+  }
+  99% {
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 3;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -2;
+  }
+}
+@keyframes bg-loading-spinner {
+  0% {
+    background-color: white;
+    z-index: 3;
+  }
+  98% {
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 3;
+  }
+  99% {
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 3;
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -2;
+  }
+}
+
+/*loading-spinner*/
+@-webkit-keyframes spin {
+  from {
+    border: 5px solid #fa90dc;
+    border-top-color: #9356DC;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    border: 5px solid #fa90dc;
+    border-top-color: #9356DC;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    border: 5px solid #fa90dc;
+    border-top-color: #9356DC;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    border: 5px solid #fa90dc;
+    border-top-color: #9356DC;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /*remplissage coeur*/
 @-webkit-keyframes remplissage-coeur {
   0% {

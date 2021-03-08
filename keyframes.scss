@@ -1,8 +1,37 @@
 @import "./variables.scss";
 
-/*Background + sombre pendant loading-spinner*/
-
-
+/*Background pendant loading-spinner*/
+@keyframes bg-loading-spinner{
+    0%{
+    background-color:white;
+    z-index: 3;
+    }
+    98%{
+    background-color:rgba(255,255,255,0.6);
+    z-index: 3;
+    }
+    99%{
+        background-color:rgba(255,255,255,0.3);
+        z-index: 3;
+    }
+    100%{
+    background-color:rgba(255,255,255,0);
+    z-index:-2;
+    }
+}
+/*loading-spinner*/
+@keyframes spin{
+    from{
+        border:5px solid $secondaire-clair;
+        border-top-color:$primaire;
+        transform:rotate(0deg);
+    }
+    to{
+        border:5px solid $secondaire-clair;
+        border-top-color:$primaire;
+        transform:rotate(360deg);
+    }
+}
 
 /*remplissage coeur*/
 @keyframes remplissage-coeur {
