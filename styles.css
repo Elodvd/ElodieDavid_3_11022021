@@ -439,8 +439,24 @@ main {
   position: relative;
 }
 
-.detail-plat :hover .detail-plat-nom {
-  width: 20%;
+.detail-plat:hover .detail-plat-nom {
+  width: 60%;
+}
+
+.detail-plat:hover .check {
+  width: 15%;
+  -webkit-transform: scaleX(100%);
+          transform: scaleX(100%);
+}
+
+.detail-plat:hover .fa-check-circle {
+  visibility: visible;
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .detail-plat-nom {
@@ -457,6 +473,41 @@ main {
 
 .detail-plat-prix {
   width: 10%;
+}
+
+.check {
+  position: absolute;
+  right: 0%;
+  width: 0px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  color: #fff;
+  font-size: 1.4em;
+  -webkit-transform: scaleX(0%);
+          transform: scaleX(0%);
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.check .fa-check-circle {
+  position: absolute;
+  visibility: hidden;
 }
 
 .btn-commander {
@@ -665,8 +716,11 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  .bloc-menu {
+  .bloc-menu, .bloc-entree-4 {
     width: 32%;
     border-radius: 20px;
     padding: 10px;
@@ -679,13 +733,6 @@ main {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-  }
-  .bloc-entree-4 {
-    height: 300px;
-    width: 340px;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
   }
   .btn-commander {
     margin-top: 50px;
