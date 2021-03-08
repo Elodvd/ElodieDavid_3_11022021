@@ -59,7 +59,6 @@ header i{
     margin-right: 20px;
 }
 section{
-    border: solid 1px $background-grey;
     background-color: $background-grey ;
     display: flex;
     flex-direction: column;
@@ -263,9 +262,28 @@ main{
     font-family: 'Shrikhand';
     font-size:25px;
 }
-.bloc-menu{
+.bloc-menu, .bloc-entree-4{
     margin-left:10px;
     margin-right: 10px;
+    :nth-child(-n+5){
+    opacity: 0;
+    animation: fadein 2s forwards;
+    }
+    :nth-child(1){
+        animation-delay: 100ms;
+    }
+    :nth-child(2){
+        animation-delay: 400ms;
+        }
+    :nth-child(3){
+        animation-delay: 700ms;
+        }
+    :nth-child(4){
+        animation-delay: 1100ms;
+        }
+    :nth-child(5){
+        animation-delay: 1400ms;
+        }     
 }
 .bloc-entree-4{
     margin-left:20px;
