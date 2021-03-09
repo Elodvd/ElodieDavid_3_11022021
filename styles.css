@@ -400,10 +400,13 @@ nav {
 
 .heart-empty-accueil {
   font-size: 1.5em;
-  font-weight: lighter;
   position: absolute;
-  right: 30px;
-  bottom: 25px;
+  right: 31px;
+  bottom: 26px;
+}
+
+.heart-empty-accueil:hover {
+  font-size: 0em;
 }
 
 .heart-full-accueil {
@@ -416,10 +419,8 @@ nav {
 }
 
 .heart-full-accueil:hover {
-  -webkit-animation: remplissage-coeur 2s forwards;
-          animation: remplissage-coeur 2s forwards;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  -webkit-animation: remplissage-coeur 1s forwards;
+          animation: remplissage-coeur 1s forwards;
   opacity: 1;
   z-index: 1000;
   background: -webkit-gradient(linear, right top, left top, from(#9356DC), to(#FF79DA));
@@ -473,6 +474,17 @@ footer i {
 }
 
 /*pages menus*/
+.header-menu {
+  position: relative;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo_pages_menus {
   width: 100%;
   padding: 1%;
@@ -481,20 +493,6 @@ footer i {
   font-family: 'Shrikhand';
   font-size: 26px;
   text-align: center;
-}
-
-.header-menu {
-  position: relative;
-}
-
-.fleche-gauche {
-  position: absolute;
-  left: 8%;
-  -webkit-transform: translateX(-8%);
-          transform: translateX(-8%);
-  top: 0.8%;
-  -webkit-transform: translateY(-0.8%);
-          transform: translateY(-0.8%);
 }
 
 .photo-header {
@@ -612,17 +610,23 @@ main {
   padding-left: 12px;
   margin: 10px -15px 10px -15px;
   position: relative;
-  line-height: 8px;
 }
 
 .detail-plat:hover .detail-plat-nom {
   width: 60%;
 }
 
+.detail-plat:hover .detail-plat-prix {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
 .detail-plat:hover .check {
   width: 15%;
-  -webkit-transform: scaleX(100%);
-          transform: scaleX(100%);
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .detail-plat:hover .fa-check-circle {
@@ -669,8 +673,8 @@ main {
   border-radius: 0 20px 20px 0;
   color: #fff;
   font-size: 1.4em;
-  -webkit-transform: scaleX(0%);
-          transform: scaleX(0%);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   -webkit-transform-origin: center right;
           transform-origin: center right;
   -webkit-transition: -webkit-transform 500ms;
@@ -793,7 +797,8 @@ main {
 @media all and (min-width: 1201px) {
   /*page accueil*/
   #logo_accueil {
-    font-size: 30px;
+    font-size: 40px;
+    padding: 0.2%;
   }
   section {
     padding: 20px;
@@ -856,6 +861,10 @@ main {
             justify-content: space-between;
   }
   /*pages menus*/
+  .logo_pages_menus {
+    padding: 0.1%;
+    font-size: 40px;
+  }
   .photo-header {
     background-size: cover;
     background-position: center;
