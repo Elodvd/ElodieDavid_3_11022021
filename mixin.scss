@@ -9,10 +9,11 @@
     padding:7px;
     margin:auto;
 }
+
 @mixin btn-violet-survol{
-        background:linear-gradient(to bottom,$secondaire-clair,40%, $primaire-clair);
-        box-shadow: 5px 5px 2px $primaire-clair;
-    }
+    background:linear-gradient(to bottom,$secondaire-clair,40%, $primaire-clair);
+    box-shadow: 3px 3px 3px rgb(190, 186, 186);
+}
 
 /* Bordure arrondie*/
 @mixin border{

@@ -123,12 +123,12 @@ h2 {
 }
 
 h3 {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 h4 {
   font-family: 'Roboto';
-  font-size: 16px;
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -220,7 +220,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 5px 20px 25px 20px;
+  padding: 0px 45px 40px 45px;
 }
 
 .btn-explorer {
@@ -249,8 +249,8 @@ section {
 .btn-explorer:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#fa90dc), color-stop(40%), to(#a173da));
   background: linear-gradient(to bottom, #fa90dc, 40%, #a173da);
-  -webkit-box-shadow: 5px 5px 2px #a173da;
-          box-shadow: 5px 5px 2px #a173da;
+  -webkit-box-shadow: 3px 3px 3px #bebaba;
+          box-shadow: 3px 3px 3px #bebaba;
 }
 
 #bloc_etapes {
@@ -313,7 +313,7 @@ article i {
 
 nav {
   background-color: #f3f3f3;
-  height: 950px;
+  height: 940px;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -332,7 +332,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 880px;
+  height: 850px;
+  padding-bottom: 20px;
 }
 
 .bloc-restaurant {
@@ -357,11 +358,11 @@ nav {
   background-color: #99E2D0;
   color: #278870;
   font-weight: bold;
-  padding: 8px;
+  padding: 6px 10px 6px 10px;
   border-radius: 3px;
   position: absolute;
   z-index: 2;
-  top: -5px;
+  top: 0px;
   left: 210px;
 }
 
@@ -369,31 +370,47 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .nom_lieu_restaurant {
   margin-left: 15px;
-  line-height: 8px;
-  position: relative;
+  line-height: 4px;
+}
+
+.heart-accueil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  height: 100%;
 }
 
 .heart-empty-accueil {
   font-size: 1.5em;
+  font-weight: lighter;
   position: absolute;
-  right: 50px;
+  right: 30px;
   bottom: 25px;
 }
 
 .heart-full-accueil {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-weight: lighter;
   position: absolute;
-  right: 50px;
+  right: 30px;
   bottom: 25px;
   opacity: 0;
 }
@@ -433,7 +450,7 @@ footer {
   border: solid 1px #f3f3f3;
   background-color: #272727;
   color: white;
-  padding: 20px;
+  padding: 25px;
   height: 150px;
   line-height: 10px;
 }
@@ -457,17 +474,27 @@ footer i {
 
 /*pages menus*/
 .logo_pages_menus {
-  width: 120px;
-  margin: auto;
-  margin-bottom: 10px;
-  display: block;
+  width: 100%;
+  padding: 1%;
+  -webkit-box-shadow: 0px 2px 3px #dadada;
+          box-shadow: 0px 2px 3px #dadada;
+  font-family: 'Shrikhand';
+  font-size: 26px;
+  text-align: center;
+}
+
+.header-menu {
   position: relative;
 }
 
 .fleche-gauche {
   position: absolute;
-  left: 30px;
-  top: 10px;
+  left: 8%;
+  -webkit-transform: translateX(-8%);
+          transform: translateX(-8%);
+  top: 0.8%;
+  -webkit-transform: translateY(-0.8%);
+          transform: translateY(-0.8%);
 }
 
 .photo-header {
@@ -485,7 +512,7 @@ main {
   position: relative;
   z-index: 2;
   margin-top: -40px;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 80px 20px;
 }
 
 .restau_coeur {
@@ -564,7 +591,7 @@ main {
   width: 40px;
   padding-bottom: 2px;
   font-size: 18px;
-  margin-bottom: -3px;
+  margin-left: -5px;
 }
 
 .detail-plat {
@@ -579,10 +606,13 @@ main {
           align-items: flex-end;
   background-color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 7px #d4d2d2;
+          box-shadow: 2px 2px 7px #d4d2d2;
   padding-right: 12px;
   padding-left: 12px;
-  margin: 10px 0px 10px 0px;
+  margin: 10px -15px 10px -15px;
   position: relative;
+  line-height: 8px;
 }
 
 .detail-plat:hover .detail-plat-nom {
@@ -683,8 +713,8 @@ main {
 .btn-commander:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#fa90dc), color-stop(40%), to(#a173da));
   background: linear-gradient(to bottom, #fa90dc, 40%, #a173da);
-  -webkit-box-shadow: 5px 5px 2px #a173da;
-          box-shadow: 5px 5px 2px #a173da;
+  -webkit-box-shadow: 3px 3px 3px #bebaba;
+          box-shadow: 3px 3px 3px #bebaba;
 }
 
 /*VERSION TABLETTE*/
