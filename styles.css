@@ -181,7 +181,6 @@ body {
 
 /*page accueil*/
 #logo_accueil {
-  width: 100%;
   padding: 2%;
   -webkit-box-shadow: 0px 2px 3px #dadada;
           box-shadow: 0px 2px 3px #dadada;
@@ -474,25 +473,33 @@ footer i {
 }
 
 /*pages menus*/
-.header-menu {
-  position: relative;
-  display: inline-block;
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  height: 50px;
 }
 
-.logo_pages_menus {
-  width: 100%;
-  padding: 1%;
-  -webkit-box-shadow: 0px 2px 3px #dadada;
-          box-shadow: 0px 2px 3px #dadada;
-  font-family: 'Shrikhand';
+.header_menu a {
+  font-size: 20px;
+}
+
+.header_menu a i {
+  position: absolute;
+  left: 7%;
+  top: 35%;
+}
+
+.header_menu p {
+  font-family: shrikhand;
   font-size: 26px;
-  text-align: center;
 }
 
 .photo-header {

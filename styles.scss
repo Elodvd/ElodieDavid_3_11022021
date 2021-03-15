@@ -56,7 +56,6 @@ body{
 /*page accueil*/
 
 #logo_accueil{
-width: 100%;
 padding:2%;
 box-shadow: 0px 2px 3px darken($background-grey, 10);
 font-family: 'Shrikhand';
@@ -199,7 +198,7 @@ padding-bottom: 20px;
     &:hover{
         font-size:0em;
     }
-  
+
 }
 .heart-full-accueil{
     font-size:1.6em;
@@ -253,20 +252,26 @@ footer i{
 }
 
 /*pages menus*/
-.header-menu{
-    position:relative;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-.logo_pages_menus{
-    width: 100%;
-    padding:1%;
-    box-shadow: 0px 2px 3px darken($background-grey, 10);
-    font-family: 'Shrikhand';
-    font-size: 26px;
-    text-align: center;
-}
+.header_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height:50px;
+        & a {
+            font-size: 20px;
+            & i {
+                position: absolute;
+                left:7%;
+                top: 35%;
+            }
+        }
+        & p {
+            font-family: shrikhand;
+            font-size: 26px;
+        }
+    }
+
 
 .photo-header{
     background-size: cover;
