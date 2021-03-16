@@ -183,22 +183,12 @@ padding-bottom: 20px;
     margin-left:15px;
     line-height: 4px;
 }
-.heart-accueil{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    height:100%;
-}
+
 .heart-empty-accueil{
     font-size:1.5em;
     position: absolute;
     right: 31px;
     bottom:26px;
-    &:hover{
-        font-size:0em;
-    }
-
 }
 .heart-full-accueil{
     font-size:1.6em;
@@ -354,7 +344,7 @@ main{
             width: 60%;
         }
         & .detail-plat-prix{
-            transform: translateX(-50px);
+            transform: translateX(-70px);
             transition-delay: 0.5s;
         }
         & .check{

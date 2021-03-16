@@ -383,29 +383,11 @@ nav {
   line-height: 4px;
 }
 
-.heart-accueil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 30%;
-  height: 100%;
-}
-
 .heart-empty-accueil {
   font-size: 1.5em;
   position: absolute;
   right: 31px;
   bottom: 26px;
-}
-
-.heart-empty-accueil:hover {
-  font-size: 0em;
 }
 
 .heart-full-accueil {
@@ -624,8 +606,8 @@ main {
 }
 
 .detail-plat:hover .detail-plat-prix {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
