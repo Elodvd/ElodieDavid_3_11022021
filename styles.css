@@ -608,8 +608,10 @@ main {
 .detail-plat:hover .detail-plat-prix {
   -webkit-transform: translateX(-70px);
           transform: translateX(-70px);
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
 }
 
 .detail-plat:hover .check {
@@ -785,6 +787,10 @@ main {
 /*VERSION DESKTOP*/
 @media all and (min-width: 1201px) {
   /*page accueil*/
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
   #logo_accueil {
     font-size: 40px;
     padding: 0.2%;

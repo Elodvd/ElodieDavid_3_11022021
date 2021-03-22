@@ -345,7 +345,8 @@ main{
         }
         & .detail-plat-prix{
             transform: translateX(-70px);
-            transition-delay: 0.5s;
+            transition:transform 800ms ;
+            
         }
         & .check{
             width: 15%;
@@ -466,6 +467,11 @@ main{
 {
 
 /*page accueil*/
+
+body{
+    width: 1200px;
+    margin:0 auto;
+}
 
 #logo_accueil{
     font-size: 40px;
